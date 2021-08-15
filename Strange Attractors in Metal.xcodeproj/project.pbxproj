@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D907316B4576C93F46A3C98 /* Pods_Strange_Attractors_in_MetalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFD3E57CC4C6E0519D325B2 /* Pods_Strange_Attractors_in_MetalTests.framework */; };
+		5925D4A8E8D65F10A0CD5E4E /* Pods_Strange_Attractors_in_Metal_Strange_Attractors_in_MetalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE854357D8415263266C0B2 /* Pods_Strange_Attractors_in_Metal_Strange_Attractors_in_MetalUITests.framework */; };
 		772BEBF926C942FC004FFC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEBF826C942FC004FFC42 /* AppDelegate.swift */; };
 		772BEBFB26C942FC004FFC42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEBFA26C942FC004FFC42 /* SceneDelegate.swift */; };
 		772BEBFD26C942FC004FFC42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEBFC26C942FC004FFC42 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		772BEC0526C942FF004FFC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BEC0326C942FF004FFC42 /* LaunchScreen.storyboard */; };
 		772BEC1026C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC0F26C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift */; };
 		772BEC1B26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */; };
+		772BEC2926C946D8004FFC42 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC2826C946D8004FFC42 /* Shaders.metal */; };
+		77D7BB93C1CCD6410322BF62 /* Pods_Strange_Attractors_in_Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04A183CEBD2EE2ADC12FE41 /* Pods_Strange_Attractors_in_Metal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A23F2AD5E7379C3F07B8825 /* Pods-Strange Attractors in Metal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in Metal.release.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in Metal/Pods-Strange Attractors in Metal.release.xcconfig"; sourceTree = "<group>"; };
+		27515E284796156F216F6BE0 /* Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.debug.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AFD3E57CC4C6E0519D325B2 /* Pods_Strange_Attractors_in_MetalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strange_Attractors_in_MetalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CFB9B6EC37FABDFE5CD11C /* Pods-Strange Attractors in MetalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in MetalTests.debug.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in MetalTests/Pods-Strange Attractors in MetalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE854357D8415263266C0B2 /* Pods_Strange_Attractors_in_Metal_Strange_Attractors_in_MetalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strange_Attractors_in_Metal_Strange_Attractors_in_MetalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585506556FBE8B3E51BF4849 /* Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.release.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7639A198C7AFBBFDB7FAD90E /* Pods-Strange Attractors in MetalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in MetalTests.release.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in MetalTests/Pods-Strange Attractors in MetalTests.release.xcconfig"; sourceTree = "<group>"; };
 		772BEBF526C942FC004FFC42 /* Strange Attractors in Metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strange Attractors in Metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		772BEBF826C942FC004FFC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		772BEBFA26C942FC004FFC42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		772BEC1626C942FF004FFC42 /* Strange Attractors in MetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strange Attractors in MetalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strange_Attractors_in_MetalUITests.swift; sourceTree = "<group>"; };
 		772BEC1C26C942FF004FFC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BEC2826C946D8004FFC42 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		B04A183CEBD2EE2ADC12FE41 /* Pods_Strange_Attractors_in_Metal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strange_Attractors_in_Metal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53F0ABFD4FAE6C001369F45 /* Pods-Strange Attractors in Metal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in Metal.debug.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in Metal/Pods-Strange Attractors in Metal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D7BB93C1CCD6410322BF62 /* Pods_Strange_Attractors_in_Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D907316B4576C93F46A3C98 /* Pods_Strange_Attractors_in_MetalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5925D4A8E8D65F10A0CD5E4E /* Pods_Strange_Attractors_in_Metal_Strange_Attractors_in_MetalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5709E66AC33B084628536D79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B04A183CEBD2EE2ADC12FE41 /* Pods_Strange_Attractors_in_Metal.framework */,
+				4FE854357D8415263266C0B2 /* Pods_Strange_Attractors_in_Metal_Strange_Attractors_in_MetalUITests.framework */,
+				3AFD3E57CC4C6E0519D325B2 /* Pods_Strange_Attractors_in_MetalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		772BEBEC26C942FC004FFC42 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +110,8 @@
 				772BEC0E26C942FF004FFC42 /* Strange Attractors in MetalTests */,
 				772BEC1926C942FF004FFC42 /* Strange Attractors in MetalUITests */,
 				772BEBF626C942FC004FFC42 /* Products */,
+				EA81841C0056D3EC08391A54 /* Pods */,
+				5709E66AC33B084628536D79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +135,7 @@
 				772BEC0126C942FF004FFC42 /* Assets.xcassets */,
 				772BEC0326C942FF004FFC42 /* LaunchScreen.storyboard */,
 				772BEC0626C942FF004FFC42 /* Info.plist */,
+				772BEC2826C946D8004FFC42 /* Shaders.metal */,
 			);
 			path = "Strange Attractors in Metal";
 			sourceTree = "<group>";
@@ -128,6 +158,19 @@
 			path = "Strange Attractors in MetalUITests";
 			sourceTree = "<group>";
 		};
+		EA81841C0056D3EC08391A54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B53F0ABFD4FAE6C001369F45 /* Pods-Strange Attractors in Metal.debug.xcconfig */,
+				0A23F2AD5E7379C3F07B8825 /* Pods-Strange Attractors in Metal.release.xcconfig */,
+				27515E284796156F216F6BE0 /* Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.debug.xcconfig */,
+				585506556FBE8B3E51BF4849 /* Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.release.xcconfig */,
+				45CFB9B6EC37FABDFE5CD11C /* Pods-Strange Attractors in MetalTests.debug.xcconfig */,
+				7639A198C7AFBBFDB7FAD90E /* Pods-Strange Attractors in MetalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BEC1F26C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in Metal" */;
 			buildPhases = (
+				6F9A4A7F438720E0490A19A6 /* [CP] Check Pods Manifest.lock */,
 				772BEBF126C942FC004FFC42 /* Sources */,
 				772BEBF226C942FC004FFC42 /* Frameworks */,
 				772BEBF326C942FC004FFC42 /* Resources */,
+				C510BC4215198811CBD3654E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BEC2226C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in MetalTests" */;
 			buildPhases = (
+				3A83888174A7D94EFC982CE6 /* [CP] Check Pods Manifest.lock */,
 				772BEC0726C942FF004FFC42 /* Sources */,
 				772BEC0826C942FF004FFC42 /* Frameworks */,
 				772BEC0926C942FF004FFC42 /* Resources */,
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BEC2526C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in MetalUITests" */;
 			buildPhases = (
+				E03018486E53F68B3F4E3443 /* [CP] Check Pods Manifest.lock */,
 				772BEC1226C942FF004FFC42 /* Sources */,
 				772BEC1326C942FF004FFC42 /* Frameworks */,
 				772BEC1426C942FF004FFC42 /* Resources */,
+				E8BB4742621D1A1DD0451880 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,11 +301,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A83888174A7D94EFC982CE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Strange Attractors in MetalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F9A4A7F438720E0490A19A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Strange Attractors in Metal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C510BC4215198811CBD3654E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Strange Attractors in Metal/Pods-Strange Attractors in Metal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Strange Attractors in Metal/Pods-Strange Attractors in Metal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Strange Attractors in Metal/Pods-Strange Attractors in Metal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03018486E53F68B3F4E3443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8BB4742621D1A1DD0451880 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests/Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		772BEBF126C942FC004FFC42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772BEC2926C946D8004FFC42 /* Shaders.metal in Sources */,
 				772BEBFD26C942FC004FFC42 /* ViewController.swift in Sources */,
 				772BEBF926C942FC004FFC42 /* AppDelegate.swift in Sources */,
 				772BEBFB26C942FC004FFC42 /* SceneDelegate.swift in Sources */,
@@ -433,6 +585,7 @@
 		};
 		772BEC2026C942FF004FFC42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B53F0ABFD4FAE6C001369F45 /* Pods-Strange Attractors in Metal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +605,7 @@
 		};
 		772BEC2126C942FF004FFC42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A23F2AD5E7379C3F07B8825 /* Pods-Strange Attractors in Metal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +625,7 @@
 		};
 		772BEC2326C942FF004FFC42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CFB9B6EC37FABDFE5CD11C /* Pods-Strange Attractors in MetalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +648,7 @@
 		};
 		772BEC2426C942FF004FFC42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7639A198C7AFBBFDB7FAD90E /* Pods-Strange Attractors in MetalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +671,7 @@
 		};
 		772BEC2626C942FF004FFC42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27515E284796156F216F6BE0 /* Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +692,7 @@
 		};
 		772BEC2726C942FF004FFC42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585506556FBE8B3E51BF4849 /* Pods-Strange Attractors in Metal-Strange Attractors in MetalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
