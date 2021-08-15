@@ -18,6 +18,7 @@
 		772BEC1026C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC0F26C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift */; };
 		772BEC1B26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */; };
 		772BEC2926C946D8004FFC42 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC2826C946D8004FFC42 /* Shaders.metal */; };
+		772BEC2B26C9559B004FFC42 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC2A26C9559B004FFC42 /* Particle.swift */; };
 		77D7BB93C1CCD6410322BF62 /* Pods_Strange_Attractors_in_Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04A183CEBD2EE2ADC12FE41 /* Pods_Strange_Attractors_in_Metal.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strange_Attractors_in_MetalUITests.swift; sourceTree = "<group>"; };
 		772BEC1C26C942FF004FFC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772BEC2826C946D8004FFC42 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		772BEC2A26C9559B004FFC42 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
 		B04A183CEBD2EE2ADC12FE41 /* Pods_Strange_Attractors_in_Metal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Strange_Attractors_in_Metal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53F0ABFD4FAE6C001369F45 /* Pods-Strange Attractors in Metal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Strange Attractors in Metal.debug.xcconfig"; path = "Target Support Files/Pods-Strange Attractors in Metal/Pods-Strange Attractors in Metal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				772BEC0326C942FF004FFC42 /* LaunchScreen.storyboard */,
 				772BEC0626C942FF004FFC42 /* Info.plist */,
 				772BEC2826C946D8004FFC42 /* Shaders.metal */,
+				772BEC2A26C9559B004FFC42 /* Particle.swift */,
 			);
 			path = "Strange Attractors in Metal";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				772BEC2926C946D8004FFC42 /* Shaders.metal in Sources */,
+				772BEC2B26C9559B004FFC42 /* Particle.swift in Sources */,
 				772BEBFD26C942FC004FFC42 /* ViewController.swift in Sources */,
 				772BEBF926C942FC004FFC42 /* AppDelegate.swift in Sources */,
 				772BEBFB26C942FC004FFC42 /* SceneDelegate.swift in Sources */,
