@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		772BEBF926C942FC004FFC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEBF826C942FC004FFC42 /* AppDelegate.swift */; };
+		772BEBFB26C942FC004FFC42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEBFA26C942FC004FFC42 /* SceneDelegate.swift */; };
+		772BEBFD26C942FC004FFC42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEBFC26C942FC004FFC42 /* ViewController.swift */; };
+		772BEC0026C942FC004FFC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BEBFE26C942FC004FFC42 /* Main.storyboard */; };
+		772BEC0226C942FF004FFC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772BEC0126C942FF004FFC42 /* Assets.xcassets */; };
+		772BEC0526C942FF004FFC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BEC0326C942FF004FFC42 /* LaunchScreen.storyboard */; };
+		772BEC1026C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC0F26C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift */; };
+		772BEC1B26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		772BEC0C26C942FF004FFC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BEBED26C942FC004FFC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BEBF426C942FC004FFC42;
+			remoteInfo = "Strange Attractors in Metal";
+		};
+		772BEC1726C942FF004FFC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BEBED26C942FC004FFC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BEBF426C942FC004FFC42;
+			remoteInfo = "Strange Attractors in Metal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		772BEBF526C942FC004FFC42 /* Strange Attractors in Metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strange Attractors in Metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BEBF826C942FC004FFC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		772BEBFA26C942FC004FFC42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		772BEBFC26C942FC004FFC42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		772BEBFF26C942FC004FFC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		772BEC0126C942FF004FFC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772BEC0426C942FF004FFC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		772BEC0626C942FF004FFC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BEC0B26C942FF004FFC42 /* Strange Attractors in MetalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strange Attractors in MetalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BEC0F26C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strange_Attractors_in_MetalTests.swift; sourceTree = "<group>"; };
+		772BEC1126C942FF004FFC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BEC1626C942FF004FFC42 /* Strange Attractors in MetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strange Attractors in MetalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strange_Attractors_in_MetalUITests.swift; sourceTree = "<group>"; };
+		772BEC1C26C942FF004FFC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		772BEBF226C942FC004FFC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BEC0826C942FF004FFC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BEC1326C942FF004FFC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		772BEBEC26C942FC004FFC42 = {
+			isa = PBXGroup;
+			children = (
+				772BEBF726C942FC004FFC42 /* Strange Attractors in Metal */,
+				772BEC0E26C942FF004FFC42 /* Strange Attractors in MetalTests */,
+				772BEC1926C942FF004FFC42 /* Strange Attractors in MetalUITests */,
+				772BEBF626C942FC004FFC42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		772BEBF626C942FC004FFC42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				772BEBF526C942FC004FFC42 /* Strange Attractors in Metal.app */,
+				772BEC0B26C942FF004FFC42 /* Strange Attractors in MetalTests.xctest */,
+				772BEC1626C942FF004FFC42 /* Strange Attractors in MetalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		772BEBF726C942FC004FFC42 /* Strange Attractors in Metal */ = {
+			isa = PBXGroup;
+			children = (
+				772BEBF826C942FC004FFC42 /* AppDelegate.swift */,
+				772BEBFA26C942FC004FFC42 /* SceneDelegate.swift */,
+				772BEBFC26C942FC004FFC42 /* ViewController.swift */,
+				772BEBFE26C942FC004FFC42 /* Main.storyboard */,
+				772BEC0126C942FF004FFC42 /* Assets.xcassets */,
+				772BEC0326C942FF004FFC42 /* LaunchScreen.storyboard */,
+				772BEC0626C942FF004FFC42 /* Info.plist */,
+			);
+			path = "Strange Attractors in Metal";
+			sourceTree = "<group>";
+		};
+		772BEC0E26C942FF004FFC42 /* Strange Attractors in MetalTests */ = {
+			isa = PBXGroup;
+			children = (
+				772BEC0F26C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift */,
+				772BEC1126C942FF004FFC42 /* Info.plist */,
+			);
+			path = "Strange Attractors in MetalTests";
+			sourceTree = "<group>";
+		};
+		772BEC1926C942FF004FFC42 /* Strange Attractors in MetalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				772BEC1A26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift */,
+				772BEC1C26C942FF004FFC42 /* Info.plist */,
+			);
+			path = "Strange Attractors in MetalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772BEBF426C942FC004FFC42 /* Strange Attractors in Metal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BEC1F26C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in Metal" */;
+			buildPhases = (
+				772BEBF126C942FC004FFC42 /* Sources */,
+				772BEBF226C942FC004FFC42 /* Frameworks */,
+				772BEBF326C942FC004FFC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Strange Attractors in Metal";
+			productName = "Strange Attractors in Metal";
+			productReference = 772BEBF526C942FC004FFC42 /* Strange Attractors in Metal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		772BEC0A26C942FF004FFC42 /* Strange Attractors in MetalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BEC2226C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in MetalTests" */;
+			buildPhases = (
+				772BEC0726C942FF004FFC42 /* Sources */,
+				772BEC0826C942FF004FFC42 /* Frameworks */,
+				772BEC0926C942FF004FFC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772BEC0D26C942FF004FFC42 /* PBXTargetDependency */,
+			);
+			name = "Strange Attractors in MetalTests";
+			productName = "Strange Attractors in MetalTests";
+			productReference = 772BEC0B26C942FF004FFC42 /* Strange Attractors in MetalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		772BEC1526C942FF004FFC42 /* Strange Attractors in MetalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BEC2526C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in MetalUITests" */;
+			buildPhases = (
+				772BEC1226C942FF004FFC42 /* Sources */,
+				772BEC1326C942FF004FFC42 /* Frameworks */,
+				772BEC1426C942FF004FFC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772BEC1826C942FF004FFC42 /* PBXTargetDependency */,
+			);
+			name = "Strange Attractors in MetalUITests";
+			productName = "Strange Attractors in MetalUITests";
+			productReference = 772BEC1626C942FF004FFC42 /* Strange Attractors in MetalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		772BEBED26C942FC004FFC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					772BEBF426C942FC004FFC42 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					772BEC0A26C942FF004FFC42 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 772BEBF426C942FC004FFC42;
+					};
+					772BEC1526C942FF004FFC42 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 772BEBF426C942FC004FFC42;
+					};
+				};
+			};
+			buildConfigurationList = 772BEBF026C942FC004FFC42 /* Build configuration list for PBXProject "Strange Attractors in Metal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 772BEBEC26C942FC004FFC42;
+			productRefGroup = 772BEBF626C942FC004FFC42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				772BEBF426C942FC004FFC42 /* Strange Attractors in Metal */,
+				772BEC0A26C942FF004FFC42 /* Strange Attractors in MetalTests */,
+				772BEC1526C942FF004FFC42 /* Strange Attractors in MetalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		772BEBF326C942FC004FFC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BEC0526C942FF004FFC42 /* LaunchScreen.storyboard in Resources */,
+				772BEC0226C942FF004FFC42 /* Assets.xcassets in Resources */,
+				772BEC0026C942FC004FFC42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BEC0926C942FF004FFC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BEC1426C942FF004FFC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		772BEBF126C942FC004FFC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BEBFD26C942FC004FFC42 /* ViewController.swift in Sources */,
+				772BEBF926C942FC004FFC42 /* AppDelegate.swift in Sources */,
+				772BEBFB26C942FC004FFC42 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BEC0726C942FF004FFC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BEC1026C942FF004FFC42 /* Strange_Attractors_in_MetalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BEC1226C942FF004FFC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BEC1B26C942FF004FFC42 /* Strange_Attractors_in_MetalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		772BEC0D26C942FF004FFC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BEBF426C942FC004FFC42 /* Strange Attractors in Metal */;
+			targetProxy = 772BEC0C26C942FF004FFC42 /* PBXContainerItemProxy */;
+		};
+		772BEC1826C942FF004FFC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BEBF426C942FC004FFC42 /* Strange Attractors in Metal */;
+			targetProxy = 772BEC1726C942FF004FFC42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		772BEBFE26C942FC004FFC42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BEBFF26C942FC004FFC42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		772BEC0326C942FF004FFC42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BEC0426C942FF004FFC42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		772BEC1D26C942FF004FFC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		772BEC1E26C942FF004FFC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		772BEC2026C942FF004FFC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Strange Attractors in Metal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.terriblegoodday.Strange-Attractors-in-Metal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		772BEC2126C942FF004FFC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Strange Attractors in Metal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.terriblegoodday.Strange-Attractors-in-Metal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		772BEC2326C942FF004FFC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Strange Attractors in MetalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.terriblegoodday.Strange-Attractors-in-MetalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strange Attractors in Metal.app/Strange Attractors in Metal";
+			};
+			name = Debug;
+		};
+		772BEC2426C942FF004FFC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Strange Attractors in MetalTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.terriblegoodday.Strange-Attractors-in-MetalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strange Attractors in Metal.app/Strange Attractors in Metal";
+			};
+			name = Release;
+		};
+		772BEC2626C942FF004FFC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Strange Attractors in MetalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.terriblegoodday.Strange-Attractors-in-MetalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Strange Attractors in Metal";
+			};
+			name = Debug;
+		};
+		772BEC2726C942FF004FFC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				INFOPLIST_FILE = "Strange Attractors in MetalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.terriblegoodday.Strange-Attractors-in-MetalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Strange Attractors in Metal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		772BEBF026C942FC004FFC42 /* Build configuration list for PBXProject "Strange Attractors in Metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BEC1D26C942FF004FFC42 /* Debug */,
+				772BEC1E26C942FF004FFC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BEC1F26C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in Metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BEC2026C942FF004FFC42 /* Debug */,
+				772BEC2126C942FF004FFC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BEC2226C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in MetalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BEC2326C942FF004FFC42 /* Debug */,
+				772BEC2426C942FF004FFC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BEC2526C942FF004FFC42 /* Build configuration list for PBXNativeTarget "Strange Attractors in MetalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BEC2626C942FF004FFC42 /* Debug */,
+				772BEC2726C942FF004FFC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 772BEBED26C942FC004FFC42 /* Project object */;
+}
