@@ -11,9 +11,12 @@ import PureLayout
 class ViewController: UIViewController {
     public var device: MTLDevice!
     var queue: MTLCommandQueue!
-    var computePipelineState: MTLComputePipelineState!
-    var timerBuffer: MTLBuffer!
-    var timer: Float = 0
+
+    var particleBuffer: MTLBuffer!
+    let particleCount = 50000
+    var particles = [Particle]()
+    var computePipelineFirstState: MTLComputePipelineState!
+    var computePipelineSecondState: MTLComputePipelineState!
 
     private weak var metalView: MTKView?
 
@@ -31,8 +34,9 @@ class ViewController: UIViewController {
         queue = device.makeCommandQueue()
 
         registerShaders()
+        initializeBuffers()
         initSubviews()
-        initConstraints()
+//        initConstraints()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -45,18 +49,61 @@ class ViewController: UIViewController {
 private extension ViewController {
     func registerShaders() {
         do {
-            guard let library = device.makeDefaultLibrary() else { return }
-            guard let kernel = library.makeFunction(name: "compute") else { return }
-            computePipelineState = try device.makeComputePipelineState(function: kernel)
-        } catch {
-            print("\(error)")
+            let library = device.makeDefaultLibrary()
+            guard let firstPass = library?.makeFunction(name: "firstPass") else { return }
+            computePipelineFirstState = try device.makeComputePipelineState(function: firstPass)
+            guard let secondPass = library?.makeFunction(name: "secondPass") else { return }
+            computePipelineSecondState = try device.makeComputePipelineState(function: secondPass)
+        } catch let e {
+            print(e)
         }
-        timerBuffer = device.makeBuffer(length: MemoryLayout<Float>.size, options: [])
+    }
+
+    func initializeBuffers() {
+        guard let screen = UIScreen.screens.first else { return }
+        let width = screen.nativeBounds.width
+        let height = screen.nativeBounds.height
+        for _ in 0..<particleCount{
+            let particle = Particle(
+                position: SIMD3<Float>(Float(arc4random() %  UInt32(width * 2)),
+                                       Float(arc4random() % UInt32(height)),
+                                       Float.random(in: -1000...1000)),
+                velocity: SIMD3<Float>((Float(arc4random() %  10) - 5) / 10,
+                                       (Float(arc4random() %  10) - 5) / 10,
+                                       Float.random(in: -100...100)))
+            particles.append(particle)
+        }
+
+        let a: Float = 10.0;
+        let b: Float = 28.0;
+        let c: Float = 2.6666666667;
+        let dt: Float = 0.00001;
+
+        for _ in 0..<1000 {
+            particles = particles.map({ particle in
+                var newParticle = particle
+                let x = particle.position.x / Float(width) * 15
+                let y = particle.position.y / Float(height) * 20
+                let z = particle.position.z / 1000.0 * 45
+
+                let dx = (a * (y - x)) * dt
+                let dy = (x * (b - z) - y) * dt
+                let dz = (x * y - c * z) * dt
+
+                let attractorForce = SIMD3<Float>(x: dx, y: dy, z: dz) * SIMD3<Float>(x: Float(width), y: Float(height), z: 1000.0)
+                newParticle.position = newParticle.position + attractorForce
+
+                return newParticle
+            })
+        }
+
+        let size = particles.count * MemoryLayout<Particle>.size
+        particleBuffer = device.makeBuffer(bytes: &particles, length: size, options: [])
     }
 
     func initSubviews() {
         initMetalView()
-        initOverlay()
+//        initOverlay()
     }
 
     func initMetalView() {
@@ -132,25 +179,36 @@ private extension ViewController {
 }
 
 extension ViewController: MTKViewDelegate {
-    func update() {
-        timer += 0.01
-        let bufferPointer = timerBuffer.contents()
-        memcpy(bufferPointer, &timer, MemoryLayout<Float>.size)
-    }
-
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {}
 
     func draw(in view: MTKView) {
         if let drawable = view.currentDrawable,
            let commandBuffer = queue.makeCommandBuffer(),
            let commandEncoder = commandBuffer.makeComputeCommandEncoder() {
-            commandEncoder.setComputePipelineState(computePipelineState)
-            commandEncoder.setBuffer(timerBuffer, offset: 0, index: 0)
+            /**
+             # First Pass
+             It's all about *drawing background*
+             */
+            commandEncoder.setComputePipelineState(computePipelineFirstState)
             commandEncoder.setTexture(drawable.texture, index: 0)
-            update()
-            let threadGroupCount = MTLSizeMake(8, 8, 1)
-            let threadGroups = MTLSizeMake(drawable.texture.width / threadGroupCount.width, drawable.texture.height / threadGroupCount.height, 1)
-            commandEncoder.dispatchThreadgroups(threadGroups, threadsPerThreadgroup: threadGroupCount)
+            var w = computePipelineFirstState.threadExecutionWidth
+            var h = computePipelineFirstState.maxTotalThreadsPerThreadgroup / w
+            var threadsPerGroup = MTLSizeMake(w, h, 1)
+            var threadsPerGrid = MTLSizeMake(drawable.texture.width, drawable.texture.height, 1)
+            commandEncoder.dispatchThreads(threadsPerGrid, threadsPerThreadgroup: threadsPerGroup)
+            /**
+             # Second Pass
+             It's all about *drawing particles*
+             */
+            commandEncoder.setComputePipelineState(computePipelineSecondState)
+            commandEncoder.setTexture(drawable.texture, index: 0)
+            w = computePipelineSecondState.threadExecutionWidth
+            h = computePipelineSecondState.maxTotalThreadsPerThreadgroup / w
+            threadsPerGroup = MTLSizeMake(1, 1, 1)
+            commandEncoder.setBuffer(particleBuffer, offset: 0, index: 0)
+            threadsPerGrid = MTLSizeMake(particleCount, 1, 1)
+            commandEncoder.dispatchThreads(threadsPerGrid, threadsPerThreadgroup: threadsPerGroup)
+
             commandEncoder.endEncoding()
             commandBuffer.present(drawable)
             commandBuffer.commit()

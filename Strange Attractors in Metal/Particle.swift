@@ -8,6 +8,6 @@
 import Foundation
 
 struct Particle {
-    var position: SIMD2<Float>
-    var velocity: SIMD2<Float>
+    var position: SIMD3<Float>
+    var velocity: SIMD3<Float>
 }
